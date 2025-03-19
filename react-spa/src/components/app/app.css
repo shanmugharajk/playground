@@ -1,0 +1,13 @@
+.app .loading,
+.app .no-component {
+  margin: 40px;
+  text-align: center;
+}
+
+.app .no-component {
+  padding: 20px;
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-50);
+  color: var(--orange-800);
+  border-radius: 5px;
+}
