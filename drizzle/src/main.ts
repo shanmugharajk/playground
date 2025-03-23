@@ -1,0 +1,7 @@
+import { drizzle } from 'drizzle-orm/libsql'
+
+import { env } from '~/env'
+
+const db = drizzle(env.DB_FILE_NAME)
+
+console.log(db)

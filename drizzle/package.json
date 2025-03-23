@@ -1,0 +1,36 @@
+{
+  "name": "drizzle",
+  "version": "1.0.0",
+  "description": "drizzle experiments",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "scripts/run.sh dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.6.3",
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.10",
+    "drizzle-kit": "^0.30.5",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.1"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.1",
+    "zod": "^3.24.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

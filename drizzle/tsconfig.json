@@ -1,0 +1,9 @@
+{
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  }
+}
