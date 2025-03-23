@@ -1,10 +1,10 @@
 {
-  "name": "react-spa",
+  "name": "gfe",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000 --open",
+    "dev": "vite --port 4000 --open",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
