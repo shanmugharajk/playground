@@ -1,0 +1,36 @@
+.container {
+  padding: 10px;
+  color: var(--gray-900);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fieldWrapper label {
+  font-size: 14px;
+}
+
+.input {
+  border: 1px solid var(--gray-300);
+  border-radius: 5px;
+  max-width: 150px;
+  padding: 0 2px;
+}
+
+.sendButton {
+  border: 1px solid var(--gray-300);
+  background-color: var(--gray-100);
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: var(--gray-200);
+}
