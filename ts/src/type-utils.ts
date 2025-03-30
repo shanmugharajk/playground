@@ -24,7 +24,7 @@ export function isObject(value: unknown) {
     return false
   }
 
-  const type = typeof value
+  let type = typeof value
   return type === 'object' || type === 'function'
 }
 
@@ -34,7 +34,7 @@ export function isPlainObject(value: unknown) {
     return false
   }
 
-  const prototype = Object.getPrototypeOf(value)
+  let prototype = Object.getPrototypeOf(value)
   return prototype === null || prototype === Object.prototype
 }
 
