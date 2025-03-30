@@ -65,7 +65,7 @@ function useFetchJobDetails() {
   let jobIdsRef = useRef([])
   let pageRef = useRef(1)
 
-  const isMounted = useIsMounted()
+  let isMounted = useIsMounted()
 
   function getRange() {
     let start = (pageRef.current - 1) * PAGE_SIZE
