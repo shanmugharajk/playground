@@ -1,10 +1,10 @@
-const SUBMIT_URL = 'https://www.greatfrontend.com/api/questions/contact-form'
+let SUBMIT_URL = 'https://www.greatfrontend.com/api/questions/contact-form'
 
 export default async function submitForm(
   event: React.SyntheticEvent<HTMLFormElement>
 ) {
   event.preventDefault()
-  const form = event.target as HTMLFormElement
+  let form = event.target as HTMLFormElement
 
   try {
     if (form.action !== SUBMIT_URL) {
@@ -17,9 +17,9 @@ export default async function submitForm(
       return
     }
 
-    const formData = new FormData(form)
+    let formData = new FormData(form)
 
-    const response = await fetch(SUBMIT_URL, {
+    let response = await fetch(SUBMIT_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ export default async function submitForm(
       }),
     })
 
-    const text = await response.text()
+    let text = await response.text()
     alert(text)
   } catch (e) {
     console.log(e)

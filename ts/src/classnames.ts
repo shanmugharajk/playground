@@ -12,7 +12,7 @@ export type ClassArray = Array<ClassValue>
 export default function classNames(...args: Array<ClassValue>): string {
   let out: string[] = []
 
-  for (const arg of args) {
+  for (let arg of args) {
     if (!arg) {
       continue
     }
@@ -32,7 +32,7 @@ export default function classNames(...args: Array<ClassValue>): string {
     if (type === 'object') {
       let obj = arg as ClassDictionary
 
-      for (const key in obj) {
+      for (let key in obj) {
         if (Object.hasOwn(obj, key) && obj[key]) {
           out.push(key)
         }

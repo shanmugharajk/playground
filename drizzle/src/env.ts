@@ -3,16 +3,16 @@ import 'dotenv/config'
 import { z } from 'zod'
 
 // Define the Zod schema for the DB_FILE_NAME environment variable
-const envSchema = z.object({
+let envSchema = z.object({
   DB_FILE_NAME: z.string().min(1, 'DB_FILE_NAME is required'),
 })
 
 // Validate the environment variables
-const result = envSchema.safeParse(process.env)
+let result = envSchema.safeParse(process.env)
 
 if (!result.success) {
   console.error('❌ Invalid environment variables:', result.error.format())
   process.exit(1) // Exit the process if validation fails
 }
 
-export const env = result.data
+export let env = result.data

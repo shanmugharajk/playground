@@ -3,7 +3,7 @@ type ArrayValue = any | Array<ArrayValue>
 export default function flatten(value: Array<ArrayValue>): Array<any> {
   let out: any[] = []
 
-  for (const item of value) {
+  for (let item of value) {
     if (Array.isArray(item)) {
       out = out.concat(flatten(item))
     } else {
@@ -25,7 +25,7 @@ export function flattenRecursive(value: Array<any>): Array<any> {
 export function* flattenWithGenerator<T>(
   value: Array<T>
 ): Generator<T, void, unknown> {
-  for (const item of value) {
+  for (let item of value) {
     if (Array.isArray(item)) {
       yield* flattenWithGenerator(item)
     } else {
@@ -34,6 +34,6 @@ export function* flattenWithGenerator<T>(
   }
 }
 
-const nestedArray = [1, [2, 3], [4, [5, 6]], 7]
-const flattened1 = [...flattenWithGenerator(nestedArray)]
+let nestedArray = [1, [2, 3], [4, [5, 6]], 7]
+let flattened1 = [...flattenWithGenerator(nestedArray)]
 console.log('Flattened array:', flattened1)

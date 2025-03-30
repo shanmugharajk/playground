@@ -14,7 +14,7 @@ type Props = {
 }
 
 function Tabs({ items }: Props) {
-  const [activeTab, setActiveTab] = useState(items[0].value)
+  let [activeTab, setActiveTab] = useState(items[0].value)
 
   return (
     <div className="Tab__container">

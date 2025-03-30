@@ -5,7 +5,7 @@ import { useDynamicComponent } from '~/hooks/use-dynamic-components'
 import './app.css'
 
 export function App() {
-  const Component = useDynamicComponent()
+  let Component = useDynamicComponent()
 
   return (
     <main className="app">

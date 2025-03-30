@@ -1,0 +1,59 @@
+.JobBoard__container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 20px;
+
+  max-width: 600px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.JobBoard__loading {
+  font-weight: 500;
+}
+
+.JobBoard__title {
+  color: var(--orange-700);
+  font-size: 20px;
+}
+
+.JobBoard__JobList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.JobBoard__Jobcard {
+  background: var(--gray-50);
+  padding: 10px;
+  border-radius: 5px;
+
+  p {
+    font-size: 12px;
+    color: var(--gray-400);
+  }
+}
+
+.JobBoard__Jobcard a {
+  color: var(--blue-600);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.JobBoard__LoadMore {
+  background: var(--orange-700);
+  color: white;
+  border: 1px solid var(--orange-800);
+  border-radius: 5px;
+  padding: 4px 16px;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    background: var(--orange-800);
+    border: 1px solid var(--orange-900);
+  }
+}
