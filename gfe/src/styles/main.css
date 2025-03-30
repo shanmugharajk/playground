@@ -3,3 +3,8 @@
 @import url('./components.css');
 
 @import 'tailwindcss';
+
+html,
+body {
+  height: 100%;
+}

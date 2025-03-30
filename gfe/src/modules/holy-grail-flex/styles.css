@@ -1,0 +1,42 @@
+.HolyGrail__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.HolyGrail__header {
+  height: 60px;
+  background: var(--indigo-200);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.HolyGrail__content {
+  display: flex;
+  flex-grow: 1;
+
+  nav {
+    background: var(--orange-200);
+    width: 100px;
+    padding: 20px 0;
+  }
+
+  main {
+    flex-grow: 1;
+    background: var(--slate-200);
+  }
+
+  aside {
+    background: var(--red-200);
+    width: 100px;
+    padding: 20px 0;
+  }
+}
+
+.HolyGrail__footer {
+  height: 60px;
+  background: var(--teal-200);
+  text-align: center;
+  padding: 20px 0;
+}
