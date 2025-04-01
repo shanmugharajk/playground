@@ -3,9 +3,9 @@ interface Function {
 }
 
 Function.prototype.myCall = function (thisArg, ...argArray) {
-  const sym = Symbol()
+  let sym = Symbol()
 
-  const wrapperObj = Object.create(thisArg)
+  let wrapperObj = Object.create(thisArg)
 
   Object.defineProperty(wrapperObj, sym, {
     enumerable: false,
